@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Novo Empregado</title>
+</head>
+<body>
+
+	<h1>Adicionar Novo Empregado</h1>
+	<form action="SaveServlet" method="post">
+		<table>
+			<tr>
+				<td>Nome:</td>
+				<td><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td>Senha:</td>
+				<td><input type="password" name="password" /></td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td><input type="email" name="email" /></td>
+			</tr>
+			<tr>
+				<td>País:</td>
+				<td><select name="country" style="width: 180px">
+						<option>Brasil</option>
+						<option>Ucrânia</option>
+						<option>Chile</option>
+						<option>Venezuela</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><br>
+				<input type="submit" value="Salvar Cadastro do Empregado " /></td>
+			</tr>
+		</table>
+	</form>
+
+	<br />
+	<a href="ViewServlet">Vizualizar Empregado Cadastrados</a>
+
+</body>
+</html>
